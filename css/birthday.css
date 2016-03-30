@@ -1,0 +1,77 @@
+#cake {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 320px;
+  margin: -10em auto 0 auto;
+}
+
+.candle {
+  background: #fff;
+  border-radius: 12px;
+  position: absolute;
+  top: 40px;
+  width: 4px;
+  height: 15px;
+}
+.candle-left {
+  left: 350px;
+}
+.candle-center {
+  left: 370px;
+}
+.candle-right {
+  left: 390px;
+}
+
+.fire {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fire-left {
+  left: 45%;
+}
+.fire-center {
+  left: 50%;
+}
+.fire-right {
+  left: 55%;
+}
+.fire:nth-child(1) {
+  animation: fire 2s 0.5s infinite;
+}
+.fire:nth-child(2) {
+  animation: fire 1.5s 0.5s infinite;
+}
+.fire:nth-child(3) {
+  animation: fire 1s 0.5s infinite;
+}
+.fire:nth-child(4) {
+  animation: fire 0.5s 0.5s infinite;
+}
+.fire:nth-child(5) {
+  animation: fire 0.2s 0.5s infinite;
+}
+
+@keyframes fire {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #cake, .candle {
+    display: none;
+  }
+}

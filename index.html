@@ -15,6 +15,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Component styles -->
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/birthday.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.mb.YTPlayer.min.css" media="all">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 	<script src="js/modernizr.custom.js"></script>
@@ -89,6 +90,7 @@
 					</svg>
 				</a>
 			</nav>
+
 		</header>
 		<!-- Grid -->
 		<section class="slider">
@@ -1214,13 +1216,63 @@
 			</div>
 		</section>
 
-		<!-- /slider-->
+		<!-- content-->
 		<section class="content">
 			<button class="button button--close"> <i class="icon icon--circle-cross"></i>
 				<span class="text-hidden">Close content</span>
 			</button>
 		</section>
+		
+		<!-- birthday-->
+		<div class="birthday" style="display: none">
+			<div class="candle candle-left">
+		    <div class="fire fire-left"></div>
+		    <div class="fire fire-left"></div>
+		    <div class="fire fire-left"></div>
+		    <div class="fire fire-left"></div>
+		    <div class="fire fire-left"></div>
+			</div>
+			<div class="candle candle-center">
+		    <div class="fire fire-center"></div>
+		    <div class="fire fire-center"></div>
+		    <div class="fire fire-center"></div>
+		    <div class="fire fire-center"></div>
+		    <div class="fire fire-center"></div>
+			</div>
+			<div class="candle candle-right">
+		    <div class="fire fire-right"></div>
+		    <div class="fire fire-right"></div>
+		    <div class="fire fire-right"></div>
+		    <div class="fire fire-right"></div>
+		    <div class="fire fire-right"></div>
+			</div>
+			<svg id="cake" version="1.1" x="0px" y="0px" width="100px" height="250px" viewBox="0 0 200 500" xml:space="preserve">
+		  		<path fill="#f8d37f" d="M173.667,427.569c-49.795,0-101.101,0-147.334,0c-3.999,0-4-16.002,0-16.002
+				c46.385,0,97.539,0,147.334,0C177.668,411.567,177.667,427.569,173.667,427.569z" />
+		  		<path fill="#eb667f" d="M102.242,427.569c5.348,0,14.079,0,17.462,0c0,0,17.026,0,27.504,0
+				c19.143,0,20.39-3.797,26.459,0c3,1.877,0,7.823,0,7.823c-2.412,2.258-58.328,0-73.667,0l0,0c-1.858,0-67.187,0-73.667,0
+				c0,0-4.125-4.983,0-7.823c5.201-3.58,16.085,0,23.725,0c8.841,0,20.762,0,20.762,0c3.686,0,8.597,0,19.511,0H102.242z" />
+		  		<path fill="#f8d37f" d="M173.667,451.394c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
+				c44.697,0,96.586,0,147.334,0C177.667,435.392,177.668,451.394,173.667,451.394z" />
+		  		<path fill="#eb667f" d="M173.667,451.394c2.875,0,2.997,9.257,0,9.131c-22.662-0.956-32.09-0.956-41.756-0.956
+				c-14.48,0-17.884,0-30.163,0c-2.087,0-2.068,0-3.915,0c-13.333,0-8.963,0-23.088,0c-11.668,0-34.99-0.294-48.412,1.831
+				c-4.109,0.65-3.01-10.006,0-10.006C37.129,451.394,149.379,451.394,173.667,451.394z" />
+		  		<path fill="#f8d37f" d="M173.667,475.571c-46.512,0-105.486,0-147.334,0c-3.999,0-4-16.002,0-16.002c43.566,0,97.96,0,147.334,0
+				C177.667,459.569,177.666,475.571,173.667,475.571z" />
+		  		<path fill="#fff" d="M111.547,415.233c-6.667-0.834-9.667,4.667-13.833,3.333c-19.649-6.291-8.158,22.176-14.5,22.334
+				c-6.667,0.166,2.833-18-13.333-22.167c-29.544-7.615-9.667,43.833-20.167,43.833c-10.333,0,8.004-55.006-16.833-39
+				c-7.5,4.833-9.508-3.78-9.299-7.004c0.799-12.329,23.592-7.153,38.132-7.329c10.234-0.124,20.238-1.505,38.287-2.167
+				c16.642-0.61,32.903,1.125,46.213,1.5c12.438,0.351,35.058-5.579,31.863,6.451c-5.532,20.833,1.25,28.216-4.409,27.883
+				c-7.606-0.447-6.058-37.895-20.62-23.333c-10.167,10.166-15.972-0.747-25,12C119.547,443.568,121.798,416.515,111.547,415.233z" />
+		  		<rect x="10" y="475.571" fill="#fff" width="180" height="4" />
+			</svg>
+		</div>
 	</div>
+	<script>
+		var d=new Date();
+		if(d.getMonth()+1 + '' + d.getDate() === '331')
+			document.querySelector(".birthday").style.display="block";
+	</script>
 	<script src="js/classie.js"></script>
 	<script src="js/dynamics.min.js"></script>
 	<script src="js/main.js"></script>
