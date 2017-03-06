@@ -5,4 +5,4 @@ M.20
 
 Sakamoto Maaya The 20th Discography
 
-http://re-fort.net/M20/
+https://re-fort.net/M20/
